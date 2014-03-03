@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Conversor de divises</string>
+    <string name="action_settings">Ajusts</string>
+    <string name="textAmount">Per favor introdueix una quantitat</string>
+    <string name="textConversion">Per favor introdueix la conversió</string>
+    <string name="textCommission">Selecciona la comissió</string>
+    <string name="textCurrency">Selecciona la moneda</string>
+    <string name="dollar">$</string>
+    <string name="euro">€</string>
+    <string name="textType">Selecciona el tipus de moneda</string>
+    <string name="textCalculate">Calcular</string>
+    <string name="textAccept">Acceptar</string>
+    <string name="title">Selecciona la moneda</string>
+    <string name="errorAmount">Per favor introdueix una quantitat</string>
+    <string name="errorCurrency">Per favor introdueix la moneda</string>
+    <string name="totalDollar">Total: $</string>
+    <string name="commissionDollar">\n\nLa comissió: $</string>
+    <string name="totalEuro">Total: </string>
+    <string name="commissionEuro">\n\nLa comissió: </string>
+    <string name="errorConversion">Per favor introdueix la conversió</string>
+
+    <string-array name="typeCurrency">
+        <item>Dòlars</item>
+        <item>Euros</item>
+    </string-array>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <string name="title_activity_secondary">Moneda i conversió</string>
+
+</resources>

@@ -8,11 +8,19 @@
     <string name="textCommission">Select the commission</string>
     <string name="textCurrency">Select the currency</string>
     <string name="dollar">$</string>
+    <string name="euro">€</string>
     <string name="textType">Choose a currency</string>
     <string name="textCalculate">Calculate</string>
     <string name="textAccept">Accept</string>
     <string name="title">Type a currency</string>
-
+    <string name="errorAmount">Please enter an amount</string>
+    <string name="errorCurrency">Please enter the currency</string>
+    <string name="totalDollar">Total: $</string>
+    <string name="commissionDollar">\n\nThe commission: $</string>
+    <string name="totalEuro">Total: </string>
+    <string name="commissionEuro">\n\nThe commission: </string>
+    <string name="errorConversion">Please enter the conversion</string>
+    
     <string-array name="typeCurrency">
         <item>Dollars</item>
         <item>Euros</item>
@@ -21,6 +29,6 @@
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
 
-    <string name="title_activity_secondary">Secondary</string>
+    <string name="title_activity_secondary">Currency and conversion</string>
 
 </resources>

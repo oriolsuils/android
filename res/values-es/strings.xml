@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Conversor de divisas</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="textAmount">Por favor introduce una cantidad</string>
+    <string name="textConversion">Por favor introduce la conversión</string>
+    <string name="textCommission">Selecciona la comisión</string>
+    <string name="textCurrency">Selecciona moneda</string>
+    <string name="dollar">$</string>
+    <string name="euro">€</string>
+    <string name="textType">Selecciona el tipo de moneda</string>
+    <string name="textCalculate">Calcular</string>
+    <string name="textAccept">Aceptar</string>
+    <string name="title">Selecciona la moneda</string>
+    <string name="errorAmount">Por favor introduce una cantidad</string>
+    <string name="errorCurrency">Por favor introduce la moneda</string>
+    <string name="totalDollar">Total: $</string>
+    <string name="commissionDollar">\n\nLa comisión: $</string>
+    <string name="totalEuro">Total: </string>
+    <string name="commissionEuro">\n\nLa comisión: </string>
+    <string name="errorConversion">Por favor introduce la conversión</string>
+
+    <string-array name="typeCurrency">
+        <item>Dolares</item>
+        <item>Euros</item>
+    </string-array>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <string name="title_activity_secondary">Moneda y conversión</string>
+
+</resources>

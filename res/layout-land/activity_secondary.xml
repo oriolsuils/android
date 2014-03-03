@@ -1,63 +1,71 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Secondary" >
 
-    <TextView
-        android:id="@+id/numBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/barCommission"
-        android:layout_centerHorizontal="true"
-        android:text="TextView"
-        android:textColor="@color/white"
-        android:visibility="invisible" />
-
-    <SeekBar
-        android:id="@+id/barCommission"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="89dp"
-        android:max="30" />
-
-    <Button
-        android:id="@+id/btnCalculate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/numBar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
-        android:text="@string/textButton" />
+    <Spinner
+        android:id="@+id/spinnerCurrency"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textType"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="19dp"
+        android:background="@color/white"
+        android:entries="@array/typeCurrency"
+        android:prompt="@string/title" />
 
     <TextView
-        android:id="@+id/textResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnCalculate"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
-        android:text="TextView"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/white"
-        android:visibility="invisible" />
-
-    <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
-        android:text="@string/textCommission"
+        android:layout_alignRight="@+id/spinnerCurrency"
+        android:layout_marginTop="18dp"
+        android:text="@string/textType"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textConversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinnerCurrency"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:text="@string/textConversion"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/editConversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textConversion"
+        android:layout_alignTop="@+id/spinnerCurrency"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:text="@string/textAccept" />
 
 </RelativeLayout>
